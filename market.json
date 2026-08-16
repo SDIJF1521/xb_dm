@@ -6,7 +6,7 @@
       "version": "1.0.0",
       "description": "使用妖狐影视 API 搜索动漫、读取剧集并播放。",
       "author": "SDIJF1521",
-      "bundle_url": "https://github.com/SDIJF1521/xb_dm/releases/download/v1.0.0/xb_dm.xbplugin",
+      "bundle_url": "https://github.com/SDIJF1521/xb_dm/releases/download/v1.0.0/xb_dm-1.0.0.xbplugin",
       "homepage": "https://github.com/SDIJF1521/xb_dm"
     }
   ]
