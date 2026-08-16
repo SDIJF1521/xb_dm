@@ -1,0 +1,55 @@
+{
+    "id":  "com.xbsvcb.xb_dm",
+    "name":  "xb_dm",
+    "version":  "1.0.0",
+    "description":  "使用妖狐影视 API 搜索动漫、读取剧集并在独立前端页面中播放。",
+    "author":  "XB Test",
+    "runtime":  "hybrid",
+    "python":  {
+                   "entry":  "plugin.py"
+               },
+    "frontend":  {
+                     "entry":  "frontend/index.html"
+                 },
+    "permissions":  [
+                        "python.execute",
+                        "network"
+                    ],
+    "pages":  [
+                  {
+                      "id":  "home",
+                      "title":  "动漫观看",
+                      "description":  "搜索动漫，选择资源站和结果序号后读取播放链接。",
+                      "fields":  [
+
+                                 ],
+                      "actions":  [
+                                      "search_anime",
+                                      "load_detail"
+                                  ]
+                  }
+              ],
+    "actions":  [
+                    {
+                        "id":  "search_anime",
+                        "label":  "搜索动漫",
+                        "type":  "python",
+                        "handler":  "search_anime"
+                    },
+                    {
+                        "id":  "load_detail",
+                        "label":  "读取剧集",
+                        "type":  "python",
+                        "handler":  "load_detail"
+                    },
+                    {
+                        "id":  "health_check",
+                        "label":  "Python 自检",
+                        "type":  "python",
+                        "handler":  "health_check"
+                    }
+                ],
+    "workflow":  {
+
+                 }
+}
